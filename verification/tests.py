@@ -11,22 +11,30 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [[1,2,3,4]],
-            "answer": 0
+            "input": [[1, 2, 3, 4]],
+            "answer": 0,
         },
         {
-            "input": [[5,5,5,5]],
-            "answer": 0
+            "input": [[5, 5, 5, 5]],
+            "answer": 0,
         },
         {
-            "input": [[1,2,3,9]],
-            "answer": 5
+            "input": [[1, 9, 3, 2]],
+            "answer": 5,
         }
     ],
     "Extra": [
         {
-            "input": [[15,10,25,35]],
-            "answer": 5
+            "input": [[15, 10, 35, 25]],
+            "answer": 5,
+        },
+        {
+            "input": [[12, 10, 1, 13]],
+            "answer": 8,
+        },
+        {
+            "input": [[11, 12, 10, 11]],
+            "answer": 0,
         },
     ]
 }

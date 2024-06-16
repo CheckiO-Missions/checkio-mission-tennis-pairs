@@ -1,38 +1,32 @@
 <!-- Describe task in general -->
+ <p style="text-align: justify;">
+    Four friends have agreed to play doubles tennis. Each of the friends has a level of play, which is represented by a positive integer: the higher the number, the better the player's level.
+ </p>
 
-<p>Quatro amigos combinaram de jogar tênis em duplas. Cada um dos amigos tem um nível de jogo, que é representado por um número inteiro: quanto maior o número, melhor o nível do jogador.</p>
-<p>Os quatro amigos querem formar as duplas para iniciar o jogo. De forma a tornar o jogo mais interessante, eles querem que os níveis dos dois times formados sejam o mais próximo possível. O nível de um time é a soma dos níveis dos jogadores do time.</p>
-<p></p>Embora eles sejam muito bons jogadores de tênis, os quatro amigos não são muito bons em algumas outras coisas, como lógica ou matemática. Você pode ajudá-los e encontrar a menor diferença possível entre os níveis dos times que podem ser formados?</p>
+ <p style="text-align: justify;">
+    The four friends want to form pairs to start the game. To make the game more interesting, they want the levels of the two teams to be as close as possible. The level of a team is the sum of the levels of the players on the team.
+ </p>
+
+ <p style="text-align: justify;">
+    Although they are very good tennis players, the four friends are not very good at some other things, such as logic or mathematics. Can you help them and find the smallest possible difference between the levels of the teams that can be formed?
+ </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> A entrada contém uma lista com quatro elementos, cada um contendo um inteiro A, B, C e D, indicando o nível de jogo dos quatro amigos.
+    <strong>Input:</strong> Unsorted <span translate="repeat">{% if is_js %}array{% else %}list{% endif %}</span> of four integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Saída: </strong> Seu programa deve produzir uma única linha, contendo um único inteiro, a menor diferença entre os níveis dos dois times formados.
+    <strong>Output:</strong> Integer.
 </p>
 
 
 <!-- Put some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Exemplo:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">countConsecutiveSummers(42) == 4
-countConsecutiveSummers(99) == 6
-</pre>
-{% else %}
-<pre class="brush: python">
-min_diferenca_niveis([1, 2, 3, 4]) == 0
-min_diferenca_niveis([5, 5, 5, 5]) == 0
-min_diferenca_niveis([1, 2, 3, 9]) == 5
-min_diferenca_niveis([10, 20, 30, 40]) == 0
-min_diferenca_niveis([15, 10, 25, 35]) == 5
-min_diferenca_niveis([100, 50, 75, 25]) == 0
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
